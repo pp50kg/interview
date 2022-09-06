@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="outermost">
+        <div class="center">
+            <div class="banner_word">
+                <div>There is no one</div>
+                <div>who loves pain</div>
+            </div> 
+            <div class="btn">
+                <img src="./images/Text.svg" alt="">
+            </div>  
+            <div class="Frame">
+                <div class="Frame_img_righttop">
+                    <img src="./images/Ellipse248.svg" alt="" class="Ellipse248">
+                    <img src="./images/Ellipse246.svg" alt="" class="Ellipse246">
+                    <img src="./images/Frame4.svg" alt="" class="Frame4">
+                    <img src="./images/Frame5.svg" alt="" class="Frame5">
+                </div>
+
+                <div class="Frame_flex">
+
+                    <div class="Frame_top">
+                        <div class="Frame_one">
+                            <img src="./images/Frame1172.svg" alt="" class="Frame_one_img">
+                            <div class="Frame_one_test">paragraph</div>
+                            <img src="./images/Frame1172.svg" alt="" class="Frame_one_img">
+                        </div>
+                        
+                        <div class="Frame_two">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    
+                    <div class="Frame_bum">
+                        <div class="Frame_one">
+                            <img src="./images/Frame1172.svg" alt="" class="Frame_one_img">
+                            <div class="Frame_one_test">paragraph</div>
+                            <img src="./images/Frame1172.svg" alt="" class="Frame_one_img">
+                        </div>
+                        
+                        <div>
+                            <div class="Frame_two">1. Quisque sodales leo
+                                <span class="Frame_two_weight" style="text-decoration:underline;">vitae vulputate auctor.</span>
+                            </div>
+                            <div class="Frame_two">2. Proin ac justo ut nisl tincidunt imperdiet.Maecenas viverra libero a pellentesque blandit.
+                            </div>
+                            <div class="Frame_two">3. Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.</div>
+                            <div class="Frame_two">4. Donec ultrices sapien
+                                <span class="Frame_two_weight">vitae leo venenatis ullamcorper.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="Frame_img_lefttop">
+                    <img src="./images/Frame3.svg" alt="">
+                    <img src="./images/Frame2.svg" alt="" class="Frame2">
+                </div>
+            </div>  
+        </div>
+    </div>
+transform: rotateY(180deg);
+
+    <div class="sea"></div>
+   
+    <div class="from_backg">
+        <div class="form">
+            <div class="form_img_top">
+                <img src="./images/Frame1819.svg" alt="" class="form_Frame1819">
+                <img src="./images/turtle.svg" alt="" class="from_turtle">
+            </div>
+            <form action="" style="height: 100%; width: 100%;" id="form">
+                <ul class="form_ul">
+                    <li>
+                        <img src="./images/Frame_store.png" alt="">
+                        <!-- <input type="text" placeholder="placeholder text"> -->
+                        <select name="country" required id="sel" onchange="">
+                            <option value="" selected style="color: #BDBDBD;">placeholder text</option>
+                            <option value="store1" >store1</option>
+                            <option value="store2">store2</option>
+                            <option value="store3">store3</option>
+                            <option value="store4">store4</option>
+                            <option value="store5">store5</option>
+                        </select>
+                    </li>
+                    <li>
+                        <img src="./images/Frame_name.png" alt="">
+                        <input id="Frame_name" type="text" placeholder="placeholder text" required="required" 
+                        onkeyup="value=value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g,'')" 
+                        onpaste="value=value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g,'')" 
+                        oncontextmenu = "value=value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g,'')"
+                        oninput="">
+                    </li>
+                    <li>
+                        <img src="./images/Frame_phone.png" alt="">
+                        <input id="Frame_phone" type="tel " placeholder="placeholder text" required="required" minlength="10" maxlength="10" pattern="[0-9]{10}"
+                        onkeyup="value=value.replace(/[^0-9]/g,'')" 
+                        onpaste="value=value.replace(/[^0-9]/g,'')" 
+                        oncontextmenu = "value=value.replace(/[^0-9]/g,'')"
+                        oninput="">
+                    </li>
+                    <li>
+                        <img src="./images/Frame_amount.png" alt="">
+                        <input id="Frame_amount" type="text" placeholder="placeholder text" required="required"
+                            onkeyup="value=value.replace(/[^0-9]/g,'')" 
+                            onblur="b=this.value;b=(b+'').replace(/^0+\./g,'0.');b.match(/^0+[1-9]+/)?b=b.replace(/^0+/g,''):b;this.value=Number(b)?b:0;"
+                            onpaste="value=value.replace(/[^0-9]/g,'')" 
+                            oncontextmenu = "value=value.replace(/[^0-9]/g,'')">
+
+                        <!-- <input type="text" placeholder="placeholder text" required="required" 
+                        onkeyup="value=value.replace(/[^0-9]/g,'')" 
+                        onpaste="value=value.replace(/[^0-9]/g,'')" 
+                        oncontextmenu = "value=value.replace(/[^0-9]/g,'')">
+                        <input type="number" step="1" min="0" placeholder="placeholder text" required="required" 
+                        onkeyup="this.value= this.value.match(/\d+(\.\d{0,2})?/) ? this.value.match(/\d+(\.\d{0,2})?/)[0] : ''"> -->
+                        <!-- <input id="Frame_amount" type="text" placeholder="placeholder text" required="required" 
+                            onkeyup="if(this.value.length==1){this.value=this.value.replace(/0*([1-9]\d*|0\.\d+)/g,'')}else{this.value=this.value.replace(/\D/g,'')}"
+                            onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" 
+                            oninput=""
+                            onblur="b=this.value;b=(b+'').replace(/^0+\./g,'0.');b.match(/^0+[1-9]+/)?b=b.replace(/^0+/g,''):b;this.value=Number(b)?b:0;"> -->
+                    </li>
+                    <li>
+                        <img src="./images/Frame_payment.png" alt="">
+                        <!-- <input type="text" placeholder="digital payment"> -->
+                        <select name="country" required id="sel2" onchange="">
+                            <option value="digital payment" selected>digital payment</option>
+                            <option value="ATM">ATM</option>
+                        </select>
+                    </li>
+                </ul>
+
+                <button type="button" class="submit_button" id="but" onclick="allvalue()"></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="sand">
+        <ul class="sand_contant">
+            <li>
+                <img src="./images/Groupab.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li>
+                <img src="./images/Frame4-1.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li>
+                <img src="./images/Frame4-2.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li>
+                <img src="./images/Frame4-3.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li>
+                <img src="./images/Frame4-4.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li>
+                <img src="./images/Frame4-5.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li>
+                <img src="./images/Frame4-6.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li>
+                <img src="./images/Frame4-7.svg" alt="" class="sand_contant_img">
+                <span class="sand_contant_test1">one</span>
+                <div class="sand_contant_test2">dehumidifier</div>
+            </li>
+            <li class="hidden_li"></li>
+        </ul>
+        <ul>
+            
+        </ul>
+    </div>
+
+    <div class="lottery">
+        <div class="lottery_text">
+            <span class="lottery_left"></span>
+            <span class="lottery_text_cen">
+                <span class="one">13.32</span><br>
+                <span class="two">who seeks after it and</span><br>
+                <span class="two">wants to have it</span>          
+            </span>
+            <span class="lottery_right"></span>
+        </div>
+        <img src="./images/lottery.svg" alt="" >
+    </div>
+
+    <div class="Argentina_out">
+        <div class="Argentina">
+            <div class="Argentina_text">
+                Neque porro quisquam
+                <br>
+                est qui dolorem!
+            </div>
+            <img src="./images/Argentina_stor.svg" alt="">
+        </div>
+    </div>
+
+    <!-- <script>
+        window.onload = function () {
+            //给表单绑定onsubmit事件
+            document.getElementById('form').onsubmit =function (){
+                return onblur_sel() && onblur_name() && onblur_phone() && onblur_amount() && onblur_sel2();
+            }
+            // 绑定离焦事件
+            // document.getElementById('sel').onblur = onblur_sel;
+            document.getElementById('Frame_name').onblur = onblur_name;
+            document.getElementById('Frame_phone').onblur = onblur_phone;
+            // document.getElementById('Frame_amount').onblur = onblur_amount;
+            // document.getElementById('sel2').onblur = onblur_sel2;
+        }
+
+        function onblur_name() {
+            //获取用户名的值
+            var Frame_name = document.getElementById('Frame_name').value;
+
+            //定义正则表达式
+            var sname = /^[\u4e00-\u9fa5A-Za-z]+$/; 
+            
+            //判断值是否符合正则表达式的规则
+            var flag = sname.test(Frame_name);
+
+            if (!flag) {
+                //輸入錯誤
+                $('#Frame_name').addClass('input_red')
+            } 
+            return flag;
+        }
+
+        function onblur_phone() {
+            //获取用户名的值
+            var Frame_phone = document.getElementById('Frame_phone').value;
+
+            //定义正则表达式 手機輸入10個號碼
+            var phone = /^09[0-9]{8}$/; 
+            
+            //判断值是否符合正则表达式的规则
+            var flag_phone = phone.test(Frame_phone);
+
+            if (!flag_phone) {
+                //輸入錯誤              
+                $('#Frame_phone').addClass('input_red')
+                alert('請輸入10位手機號碼')
+            } 
+            return flag_phone;
+        }
+
+        // function onblur_amount() {
+        //         var val = document.getElementById('Frame_amount').value.trim();
+        //         if (Frame_amount.length != 0) {
+        //             reg = /^[-+]?\d*$/;
+        //             if (!reg.test(Frame_amount)) {//判断是否为数字类型    
+        //                 if (val <= parseInt('0')) //“123”为自己设定的最大值    
+        //                 {
+        //                     $('#Frame_amount').addClass('input_red')//请将“数字”改成你要验证的那个属性名称！    
+        //                 }
+        //             }
+        //         }
+        //     }    
+    </script> -->
+
+    <script>
+
+        function allvalue() {
+            var sel = document.getElementById('sel');
+            var Frame_name = document.getElementById('Frame_name');
+            var Frame_phone = document.getElementById('Frame_phone');
+            var Frame_amount = document.getElementById('Frame_amount');
+            var sel2 = document.getElementById('sel2');
+            
+
+            var sel_v = '';
+            var phone = '';
+            var name = '';
+            var amount = '';
+            var sel2_v = '';
+            var sel_value = sel.value;
+            var phone_value = Frame_phone.value;
+            var name_value = Frame_name.value;
+            var amount_value = Frame_amount.value;
+            var sel2_value = sel2.value;
+            var chk = true;
+            //定义正则表达式 手機輸入10個號碼
+            var regular_phone = /^09[0-9]{8}$/;
+            //判断值是否符合正则表达式的规则
+            var flag_phone = regular_phone.test(phone_value);
+
+            sel_v = sel_value;
+            phone = phone_value;
+            name = name_value;
+            amount = amount_value;
+            sel2_v = sel2_value
+
+            
+            if(sel_v == ''){
+                $('#sel').css('border', '3px solid #E06D6D')
+                $('#sel').after($('<span>').text("required").addClass('required'));
+                chk = false;
+            }else if( sel_v != '' ){
+                $('#sel').removeAttr("style")
+                $('.required').remove()
+                chk = true;
+            }
+            if (name == '') {
+                $('#Frame_name').css('border','3px solid #E06D6D')
+                $('#Frame_name').after($('<span>').text("required").addClass('required'));
+                chk = false;
+            }else if (name != '') {
+                $('#Frame_name').removeAttr("style")
+                $('.required').remove()
+                chk = true;
+            }
+            if (!flag_phone) {
+                $('#Frame_phone').css('border', '3px solid #E06D6D')
+                $('#Frame_phone').after($('<span>').text("required").addClass('required'));
+                chk = false;
+            }else if (flag_phone) {
+                $('#Frame_phone').removeAttr("style")
+                $('.required').remove()
+                chk = true;
+            }
+            if (amount == '') {
+                $('#Frame_amount').css('border', '3px solid #E06D6D')
+                $('#Frame_amount').after($('<span>').text("required").addClass('required'));
+                chk = false;
+            }else if (amount != '') {
+                $('#Frame_amount').removeAttr("style")
+                $('.required').remove()
+                chk = true;
+            }
+            if (chk) {
+                $(but).addClass('success')
+                $(but).removeClass('failure')
+            }else{
+                $(but).addClass('failure')
+                $(but).removeClass('success')
+            }
+        }
+    </script>
+</body>
+</html>
